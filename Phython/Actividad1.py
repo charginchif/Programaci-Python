@@ -7,8 +7,8 @@ print(listavacia)
 
 for x in range (len(listavacia)):#numero total de elementos
     for z in range(0, len(listavacia)-x-1):#Comprueba lista de rangos
-        if listavacia[z] > listavacia [z+1]:
-            listavacia[z], listavacia[z+1] = listavacia[z+1], listavacia[z]
+        if listavacia[z] > listavacia [z+1]:#Compara para encontrar el mas grande
+            listavacia[z], listavacia[z+1] = listavacia[z+1], listavacia[z]#Variables auxiliares para intercambiar
 
 print(listavacia)
 print(listavacia[::-1])
